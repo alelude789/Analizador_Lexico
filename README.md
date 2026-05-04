@@ -553,9 +553,6 @@ Estas pueden ser mejoras futuras.
 - **Análisis Léxico:** Aho, A. V., et al. (2006). *Compilers: Principles, Techniques, and Tools*
 - **Flask:** https://flask.palletsprojects.com/
 
-## 📄 Licencia
-
-Este proyecto está bajo licencia **MIT**. Ver archivo `LICENSE` para más detalles.
 
 ## 👥 Autores
 
