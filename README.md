@@ -565,8 +565,8 @@ Este proyecto está bajo licencia **MIT**. Ver archivo `LICENSE` para más detal
 - **Boris Rengel**
 - **Jose Encalada**
 
-**Asignatura:** Teoría de la Computación  
-**Institución:** [Tu Universidad]  
+**Asignatura:** Teoría de Autómatas y Computabilidad Avanzada  
+**Institución:** Universidad Nacional de Loja  
 **Año:** 2026
 
 ## 📧 Contacto
