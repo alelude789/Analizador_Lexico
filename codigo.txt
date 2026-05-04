@@ -1,0 +1,14 @@
+entero edad = 20;
+decimal promedio = 9.5;
+
+si (edad >= 18 && promedio >= 7.0) {
+    retornar verdadero;
+} sino {
+    retornar falso;
+}
+
+mientras (edad < 25 || promedio == 10.0) {
+    edad = edad + 1;
+}
+
+@error

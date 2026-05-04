@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado del Analizador Lexico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #222;
+        }
+
+        .contenedor {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.15);
+            line-height: 2.3;
+        }
+
+        .token {
+            color: white;
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .invalido {
+            border: 2px solid black;
+        }
+
+        .leyenda {
+            margin-top: 25px;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .item {
+            margin: 6px 0;
+        }
+
+        .cuadro {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resultado del Analizador Lexico</h1>
+
+    <div class="contenedor">
+        <span class="token" style="background:#6f42c1;">entero</span> <span class="token" style="background:#0d6efd;">edad</span> <span class="token" style="background:#6c757d;">=</span> <span class="token" style="background:#198754;">20</span> <span class="token" style="background:#6c757d;">;</span> <span class="token" style="background:#6f42c1;">decimal</span> <span class="token" style="background:#0d6efd;">promedio</span> <span class="token" style="background:#6c757d;">=</span> <span class="token" style="background:#198754;">9.5</span> <span class="token" style="background:#6c757d;">;</span> <span class="token" style="background:#6f42c1;">si</span> <span class="token" style="background:#6c757d;">(</span> <span class="token" style="background:#0d6efd;">edad</span> <span class="token" style="background:#d63384;">&gt;=</span> <span class="token" style="background:#198754;">18</span> <span class="token" style="background:#fd7e14;">&amp;&amp;</span> <span class="token" style="background:#0d6efd;">promedio</span> <span class="token" style="background:#d63384;">&gt;=</span> <span class="token" style="background:#198754;">7.0</span> <span class="token" style="background:#6c757d;">)</span> <span class="token" style="background:#6c757d;">{</span> <span class="token" style="background:#6f42c1;">retornar</span> <span class="token" style="background:#6f42c1;">verdadero</span> <span class="token" style="background:#6c757d;">;</span> <span class="token" style="background:#6c757d;">}</span> <span class="token" style="background:#6f42c1;">sino</span> <span class="token" style="background:#6c757d;">{</span> <span class="token" style="background:#6f42c1;">retornar</span> <span class="token" style="background:#6f42c1;">falso</span> <span class="token" style="background:#6c757d;">;</span> <span class="token" style="background:#6c757d;">}</span> <span class="token" style="background:#6f42c1;">mientras</span> <span class="token" style="background:#6c757d;">(</span> <span class="token" style="background:#0d6efd;">edad</span> <span class="token" style="background:#d63384;">&lt;</span> <span class="token" style="background:#198754;">25</span> <span class="token" style="background:#fd7e14;">||</span> <span class="token" style="background:#0d6efd;">promedio</span> <span class="token" style="background:#d63384;">==</span> <span class="token" style="background:#198754;">10.0</span> <span class="token" style="background:#6c757d;">)</span> <span class="token" style="background:#6c757d;">{</span> <span class="token" style="background:#0d6efd;">edad</span> <span class="token" style="background:#6c757d;">=</span> <span class="token" style="background:#0d6efd;">edad</span> <span class="token" style="background:#20c997;">+</span> <span class="token" style="background:#198754;">1</span> <span class="token" style="background:#6c757d;">;</span> <span class="token" style="background:#6c757d;">}</span> <span class="token invalido" style="background:#dc3545;">@</span> <span class="token" style="background:#0d6efd;">error</span> 
+    </div>
+
+    <div class="leyenda">
+        <h2>Leyenda</h2>
+        <div class="item"><span class="cuadro" style="background:#6f42c1;"></span>PALABRA_RESERVADA</div><div class="item"><span class="cuadro" style="background:#0d6efd;"></span>IDENTIFICADOR</div><div class="item"><span class="cuadro" style="background:#198754;"></span>NUMERO</div><div class="item"><span class="cuadro" style="background:#fd7e14;"></span>OPERADOR_LOGICO</div><div class="item"><span class="cuadro" style="background:#20c997;"></span>OPERADOR_ARITMETICO</div><div class="item"><span class="cuadro" style="background:#d63384;"></span>OPERADOR_RELACIONAL</div><div class="item"><span class="cuadro" style="background:#6c757d;"></span>SIMBOLO</div><div class="item"><span class="cuadro" style="background:#dc3545;"></span>INVALIDO</div>
+    </div>
+</body>
+</html>
